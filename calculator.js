@@ -25,3 +25,21 @@ function calculateResult() {
         document.getElementById('display').value = 'Error';
     }
 }
+
+function deleteLastCharacter() {
+    if (isResultShown) {
+        clearDisplay();
+    } else {
+        currentInput = currentInput.slice(0, -1);
+        document.getElementById('display').value = currentInput;
+    }
+    function deleteLastCharacter() {
+        if (isResultShown) {
+            clearDisplay();
+        } else {
+            currentInput = currentInput.slice(0, -1);
+            document.getElementById('display').value = currentInput;
+        }
+    }
+    
+}
